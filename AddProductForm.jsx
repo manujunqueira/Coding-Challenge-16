@@ -63,3 +63,10 @@ const AddProductForm = ({ addProduct }) => {
 };
 
 export default AddProductForm;
+
+// Task 7 - Pass Data Between Components
+/*This is already covered in previous steps:
+
+The App component passes the addProduct function to AddProductForm.
+When the form is submitted, addProduct updates the products state with the new product.
+Summary*/

@@ -1,3 +1,5 @@
+// Task 3 - Create the ProductList Component
+
 // ProductList.jsx
 // importing the ProductItem component to display individual products
 import ProductItem from "./ProductItem";

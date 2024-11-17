@@ -32,13 +32,15 @@ const AddProductForm = ({ addProduct }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}
+    style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
       {/* Input field for product name */}
       <input
         type="text"
         placeholder="Product Name"
         value={name}
         onChange={(e) => setName(e.target.value)} // Update name state on change
+        style={{ padding: '0.3rem', fontSize: '1rem' }}
       />
       
       {/* Input field for product price */}
@@ -47,6 +49,7 @@ const AddProductForm = ({ addProduct }) => {
         placeholder="Price"
         value={price}
         onChange={(e) => setPrice(e.target.value)} // Update price state on change
+        style={{ padding: '0.3rem', fontSize: '1rem' }}
       />
       
       {/* Textarea for product description */}
@@ -54,10 +57,23 @@ const AddProductForm = ({ addProduct }) => {
         placeholder="Description"
         value={description}
         onChange={(e) => setDescription(e.target.value)} // Update description state on change
+        style={{ padding: '0.3rem', fontSize: '1rem', resize: 'vertical' }}
       ></textarea>
       
       {/* Submit button to add the product */}
-      <button type="submit">Add Product</button>
+      <button type="submit"
+      style={{
+        padding: '0.75rem',
+        fontSize: '1rem',
+        backgroundColor: '#007BFF',
+        color: 'white',
+        border: 'none',
+        borderRadius: '4px',
+        cursor: 'pointer',
+      }}
+      >
+        
+        Add Product</button>
     </form>
   );
 };
